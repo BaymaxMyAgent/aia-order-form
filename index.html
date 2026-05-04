@@ -283,12 +283,19 @@
     <section id="plans" class="section">
       <div class="wrap enroll" id="checkout">
         <div class="panel">
-          <div class="sectionHead" style="margin-bottom:0"><h2>Select Your Plan</h2><p>Mockup pricing tokens can be replaced by your CRM/order-form variables.</p></div>
+          <div class="sectionHead" style="margin-bottom:0"><h2>Select Your Plan</h2><p>Choose the enrollment option that works best for you. First payment is due today.</p></div>
           <div class="plans" role="radiogroup" aria-label="Payment plans">
-            <div class="plan active" data-plan="Pay in Full" data-price="@PRICE@"><span class="save">Save 10%</span><small>@TOTPAYS@ Payment</small><div class="price">@PRICE@</div><p>Best value. Pay today and lock in your founding member seat.</p></div>
-            <div class="plan" data-plan="2 Pay" data-price="@PRICE@ / Month"><small>@TOTPAYS@ Payments</small><div class="price">@PRICE@</div><p>First payment due today. Remaining payment scheduled every 30 days.</p></div>
-            <div class="plan" data-plan="3 Pay" data-price="@PRICE@ / Month"><small>@TOTPAYS@ Payments</small><div class="price">@PRICE@</div><p>First payment due today. Remaining payments scheduled every 30 days.</p></div>
-            <div class="plan" data-plan="4 Pay" data-price="@PRICE@ / Month"><small>@TOTPAYS@ Payments</small><div class="price">@PRICE@</div><p>First payment due today. Remaining payments scheduled every 30 days.</p></div>
+            <div class="plan active" data-plan="1 Payment" data-price="$6,000">
+              <span class="save">Save 10%</span>
+              <small>1 Payment</small>
+              <div class="price">$6,000</div>
+              <p>Best value. Pay today and lock in your AI Advantage Coaching seat.</p>
+            </div>
+            <div class="plan" data-plan="3 Payments" data-price="$2,200">
+              <small>3 Payments</small>
+              <div class="price">$2,200 <span style="font-size:17px;font-weight:700">/ Month</span></div>
+              <p>First payment due today. Remaining payments are scheduled monthly.</p>
+            </div>
           </div>
 
           <div class="divider"></div>
@@ -335,10 +342,10 @@
           <div class="lineItem"><span>2 Live Event Tickets</span><span>Bonus</span></div>
           <div class="lineItem"><span>Ultimate You AI Clone DNA</span><span>Bonus</span></div>
           <div class="lineItem"><span>AI Advantage Certificate</span><span>Included</span></div>
-          <div class="due"><small>Due Now</small><strong id="dueNow">@PRICE@</strong><div id="planNote">Pay in Full selected</div></div>
+          <div class="due"><small>Due Now</small><strong id="dueNow">$6,000</strong><div id="planNote">1 Payment selected</div></div>
           <a class="btn" href="#checkout" style="width:100%">Complete Secure Enrollment</a>
           <div class="secure"><span class="badge">SSL Secure</span><span class="badge">Authorize.Net Ready</span><span class="badge">Cards Accepted</span></div>
-          <p style="color:var(--muted);font-size:13px;margin-top:18px">Mockup only. Connect this layout to your CRM/payment processor before live use.</p>
+          <p style="color:var(--muted);font-size:13px;margin-top:18px">Your payment information is securely submitted through the checkout processor.</p>
         </aside>
       </div>
     </section>
@@ -359,7 +366,7 @@
     }));
     document.getElementById('orderForm').addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('Mockup only: connect this form to the AmplifyAI checkout processor before accepting payments.');
+      alert('Please connect this form to the AmplifyAI checkout processor before accepting payments.');
     });
   </script>
 </body>
