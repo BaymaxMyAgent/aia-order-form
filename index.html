@@ -1,537 +1,365 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI Advantage — 1 on 1 Coaching Enrollment</title>
-  <meta name="description" content="Premium AI Advantage 1 on 1 Coaching order form mockup." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --ink:#f6f1e7; --muted:#bcb3a6; --gold:#d9ae61; --gold2:#ffe4a7;
-      --cyan:#7ee7ff; --bg:#080b10; --panel:#111722; --panel2:#0d111a;
-      --line:rgba(255,255,255,.13); --soft:rgba(255,255,255,.08); --shadow:0 30px 90px rgba(0,0,0,.45);
-      --radius:28px; --radius2:18px;
-    }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:
-      radial-gradient(circle at 18% 8%, rgba(217,174,97,.22), transparent 30%),
-      radial-gradient(circle at 78% 18%, rgba(126,231,255,.12), transparent 27%),
-      linear-gradient(180deg,#070a10 0%,#0a0e15 42%,#06080c 100%);line-height:1.6;}
-    body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(#000,transparent 82%)}
-    a{color:inherit} .wrap{width:min(1180px,calc(100% - 36px));margin:auto}.nav{position:sticky;top:0;z-index:50;background:rgba(7,9,13,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.09)}
-    .nav .wrap{width:min(1600px,calc(100% - 112px))}.navin{height:86px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:16px;align-items:center;font-weight:900;letter-spacing:.09em;text-transform:uppercase;font-size:20px}.mark{width:50px;height:50px;border-radius:15px;background:linear-gradient(135deg,#f6d27b 0%,#fff0b9 48%,#92f6f3 100%);box-shadow:0 0 42px rgba(217,174,97,.35)}.logo{height:34px;width:auto!important;max-width:none;object-fit:contain;display:block}.challengeText{font-size:16px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);white-space:nowrap;text-shadow:0 0 24px rgba(217,174,97,.35)}
-    .navlinks{display:flex;gap:22px;align-items:center;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:15px 24px;font-weight:800;cursor:pointer;color:#111;background:linear-gradient(135deg,var(--gold),var(--gold2));box-shadow:0 14px 42px rgba(217,174,97,.25);text-decoration:none;transition:.25s ease}.btn:hover{transform:translateY(-2px);box-shadow:0 20px 52px rgba(217,174,97,.35)}
-    .ghost{background:rgba(255,255,255,.07);color:var(--ink);border:1px solid var(--line);box-shadow:none}.hero{padding:0px 0 30px;position:relative;overflow:hidden}.heroGrid{display:grid;grid-template-columns:1fr;gap:46px;align-items:center;max-width:940px}.eyebrow{display:inline-flex;gap:10px;align-items:center;padding:8px 13px;border:1px solid rgba(217,174,97,.36);border-radius:999px;color:var(--gold2);background:rgba(217,174,97,.08);text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:800}.hero h1{font-family:'Playfair Display',serif;font-size:clamp(46px,7vw,86px);line-height:1.12;margin:22px 0 18px}.hero h1 span{display:block;background:linear-gradient(90deg,#fff,var(--gold2),var(--cyan));-webkit-background-clip:text;color:transparent}.lead{font-size:20px;color:#ded6c8;max-width:720px}.heroList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:28px 0}.pill{border:1px solid var(--line);background:rgba(255,255,255,.06);border-radius:999px;padding:11px 14px;color:#e9dfd0;font-weight:700;font-size:14px}.heroCard{border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.04));border-radius:var(--radius);box-shadow:var(--shadow);padding:14px;position:relative}.heroCard:after{content:"";position:absolute;inset:12px;border-radius:22px;border:1px solid rgba(255,255,255,.12);pointer-events:none}.heroCard img{width:100%;display:block;border-radius:22px;aspect-ratio:3/2;object-fit:cover}.floating{position:absolute;right:30px;bottom:28px;background:rgba(8,11,16,.78);border:1px solid rgba(255,255,255,.18);border-radius:22px;padding:18px;backdrop-filter:blur(14px);box-shadow:0 20px 50px rgba(0,0,0,.45);max-width:300px}.floating strong{display:block;color:var(--gold2);font-size:13px;text-transform:uppercase;letter-spacing:.12em}.floating p{margin:6px 0 0;color:#ded6c8;font-size:14px}
-    .heroBannerWrap{position:relative;max-width:1040px;margin:0 auto 8px;padding:0;isolation:isolate}
-    .heroBannerWrap:before{content:"";position:absolute;left:50%;top:48%;width:104%;height:104%;transform:translate(-50%,-50%);background:
-      radial-gradient(circle at 31% 48%, rgba(217,174,97,.38), transparent 38%),
-      radial-gradient(circle at 56% 46%, rgba(255,228,167,.26), transparent 36%),
-      radial-gradient(circle at 78% 43%, rgba(126,231,255,.18), transparent 34%),
-      linear-gradient(90deg, transparent, rgba(255,228,167,.12), transparent);filter:blur(28px);opacity:1;z-index:0}
-    .heroBannerWrap:after{content:"";position:absolute;left:8%;right:8%;bottom:-8px;height:42%;background:
-      radial-gradient(ellipse at center, rgba(217,174,97,.32), transparent 62%);
-      filter:blur(30px);opacity:.88;z-index:0}
-    .heroAuthorityBanner{position:relative;z-index:1;width:100%;height:auto;display:block;object-fit:contain;filter:drop-shadow(0 22px 46px rgba(0,0,0,.55)) drop-shadow(0 0 26px rgba(217,174,97,.16))}
-
-    .section{padding:54px 0}.sectionHead{display:block;margin:0 auto 24px;max-width:980px}.sectionHead h2{font-family:'Playfair Display',serif;font-size:clamp(34px,4vw,54px);line-height:1;margin:0}.sectionHead p{margin:14px 0 0;color:var(--muted);max-width:760px}.offerGrid{display:grid;grid-template-columns:1fr;gap:28px;max-width:980px;margin:0 auto}.offer{display:grid;grid-template-columns:1fr;gap:22px;align-items:start;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.035));border-radius:var(--radius);padding:28px;min-height:300px;box-shadow:0 24px 70px rgba(0,0,0,.22);overflow:hidden}.bonusLabel{color:var(--gold2);font-weight:900;font-size:14px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 4px}.offer img,.placeholderArt{width:100%;height:auto;min-height:0;object-fit:contain;border-radius:20px}.placeholderArt{display:grid;place-items:center;background:radial-gradient(circle at 30% 20%,rgba(126,231,255,.22),transparent 35%),linear-gradient(135deg,rgba(217,174,97,.28),rgba(255,255,255,.06));border:1px solid var(--line);text-align:center;padding:20px}.placeholderArt b{font-family:'Playfair Display',serif;font-size:30px;line-height:1.05}.tag{display:inline-flex;margin-bottom:10px;color:var(--gold2);font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:900}.offer h3{margin:0 0 10px;font-size:24px;line-height:1.12}.offer p{color:#d8d0c4;margin:0 0 12px}.checks{padding:0;margin:14px 0 0;list-style:none}.checks li{margin:8px 0;color:#e6dfd5}.checks li:before{content:"✦";color:var(--gold);margin-right:8px}.enroll{display:grid;grid-template-columns:1.12fr .88fr;gap:28px;align-items:start}.panel{border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.035));border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}.plan{position:relative;border:1px solid var(--line);background:rgba(255,255,255,.055);border-radius:22px;padding:18px;cursor:pointer;transition:.2s ease}.plan:hover,.plan.active{border-color:rgba(217,174,97,.75);background:rgba(217,174,97,.1);transform:translateY(-2px)}.plan small{color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:800}.price{font-size:31px;font-weight:900;margin:5px 0}.save{position:absolute;top:14px;right:14px;background:rgba(126,231,255,.15);color:#bff4ff;border:1px solid rgba(126,231,255,.35);padding:5px 9px;border-radius:999px;font-size:11px;font-weight:800}.formGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:800}.field input,.field select{width:100%;border:1px solid var(--line);background:rgba(255,255,255,.065);color:var(--ink);border-radius:14px;padding:14px 14px;font:inherit;outline:none}.field input:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(217,174,97,.11)}.divider{height:1px;background:var(--line);margin:24px 0}.terms details{border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.045);margin:10px 0;overflow:hidden}.terms summary{cursor:pointer;padding:15px 16px;font-weight:800}.terms .copy{padding:0 16px 16px;color:#cfc7bb;font-size:13px;max-height:170px;overflow:auto}.agree{display:flex;gap:10px;align-items:flex-start;color:#e2dacd;font-size:14px;margin:14px 0}.agree input{margin-top:4px}.summary{position:sticky;top:94px}.summary h3{font-family:'Playfair Display',serif;font-size:30px;margin:0 0 10px}.lineItem{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding:12px 0;color:#ddd5c8}.lineItem span:last-child{color:var(--gold2);font-weight:900}.due{margin:18px 0;padding:18px;border-radius:20px;background:linear-gradient(135deg,rgba(217,174,97,.18),rgba(126,231,255,.08));border:1px solid rgba(217,174,97,.32)}.due small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:900}.due strong{font-size:38px;line-height:1.1}.secure{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.badge{border:1px solid var(--line);border-radius:999px;padding:8px 11px;color:#d6cec2;background:rgba(255,255,255,.05);font-size:12px}.footer{padding:42px 0;color:var(--muted);text-align:center;border-top:1px solid var(--line);font-size:13px}.mobileCta{display:none}
-    @media(max-width:980px){.heroGrid,.enroll{grid-template-columns:1fr}.offerGrid{grid-template-columns:1fr}.summary{position:static}.navlinks{display:none}.mobileCta{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:60}.mobileCta .btn{width:100%}body{padding-bottom:82px}}
-    @media(max-width:680px){.wrap{width:min(100% - 24px,1180px)}.nav .wrap{width:100%;padding-left:12px;padding-right:16px}.hero{padding-top:24px}.heroList,.plans,.formGrid{grid-template-columns:1fr}.offer{grid-template-columns:1fr;padding:14px}.sectionHead{display:block}.floating{position:static;max-width:none;margin-top:12px}.offer img,.placeholderArt{height:auto}.navin{height:74px;justify-content:flex-start!important}.brand{font-size:15px;gap:11px;margin-left:0;padding-left:0}.mark{width:38px;height:38px;border-radius:12px}.logo{height:34px!important;width:auto!important;max-width:none!important;object-fit:contain;display:block}.challengeText{font-size:14px;letter-spacing:.11em}.heroBannerWrap{margin:0 auto 6px;padding-top:0}.heroAuthorityBanner{width:112%;margin-left:-6%;filter:drop-shadow(0 14px 30px rgba(0,0,0,.48)) drop-shadow(0 0 18px rgba(217,174,97,.14))}.panel{padding:18px}}
-
-
-    @media(max-width:520px){.brand{gap:9px}.logo{height:32px!important}.challengeText{font-size:16px;letter-spacing:.08em}.nav .wrap{padding-left:10px;padding-right:10px}.heroAuthorityBanner{width:118%;margin-left:-9%}}
-
-    /* Desktop compact tile sizing: preserves the mobile-style full-image presentation without oversized cards */
-    @media(min-width:981px){
-      .section{padding:44px 0}
-      .sectionHead{max-width:760px;margin:0 auto 22px}
-      .sectionHead h2{font-size:clamp(40px,4vw,58px)}
-      .sectionHead p{max-width:760px;margin-top:12px}
-      .offerGrid{max-width:760px;gap:22px;margin:0 auto}
-      .offer{padding:22px;gap:18px;min-height:unset}
-      .offer img,.placeholderArt{height:auto;min-height:0;max-height:300px;object-fit:contain;margin-bottom:6px}
-      .offer h3{font-size:22px;line-height:1.12}
-      .offer p{font-size:15px;line-height:1.55}
-      .checks{margin-top:12px}
-      .checks li{font-size:15px;margin:6px 0}
-      .bonusLabel{font-size:12px;margin-bottom:0}
-    }
-  
-    /* HERO TITLE FIX — keeps mobile title professional and prevents overflow */
-    .hero h1{
-      max-width:100%;
-    }
-
-    .hero h1 .line1,
-    .hero h1 .line2{
-      display:block;
-    }
-
-    .hero h1 .line1{
-      white-space:nowrap;
-      color:var(--ink);
-      background:none;
-      -webkit-background-clip:initial;
-    }
-
-    .hero h1 .line2{
-      white-space:nowrap;
-      color:var(--gold2);
-      background:none;
-      -webkit-background-clip:initial;
-      text-shadow:0 0 18px rgba(217,174,97,.22);
-    }
-
-    @media(max-width:680px){
-      .hero h1{
-        font-size:clamp(34px, 10.4vw, 46px);
-        line-height:1.08;
-        margin:20px 0 18px;
-      }
-
-      .hero h1 .line2{
-        font-size:.92em;
-        letter-spacing:-.035em;
-      }
-    }
-
-    @media(max-width:390px){
-      .hero h1{
-        font-size:clamp(31px, 9.8vw, 38px);
-      }
-
-      .hero h1 .line2{
-        font-size:.90em;
-        letter-spacing:-.045em;
-      }
-    }
-
-
-    /* ===== PREMIUM BONUSES DIVIDER — animated high-end gold shimmer ===== */
-    .sectionDivider{
-      position:relative;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:16px;
-      margin:62px auto 26px;
-      width:min(780px, calc(100% - 36px));
-      color:var(--gold2);
-      font-weight:900;
-      letter-spacing:.24em;
-      font-size:12px;
-      text-transform:uppercase;
-      isolation:isolate;
-    }
-
-    .sectionDivider:before,
-    .sectionDivider:after{
-      content:"";
-      flex:1;
-      height:1px;
-      background:linear-gradient(
-        90deg,
-        transparent 0%,
-        rgba(217,174,97,.38) 22%,
-        #FFC76A 50%,
-        rgba(255,228,167,.58) 70%,
-        transparent 100%
-      );
-      box-shadow:0 0 10px rgba(255,199,106,.38), 0 0 22px rgba(217,174,97,.16);
-      opacity:.95;
-      overflow:hidden;
-    }
-
-    .sectionDivider span{
-      position:relative;
-      z-index:2;
-      white-space:nowrap;
-      padding:4px 10px;
-      color:var(--gold2);
-      text-shadow:0 0 14px rgba(255,199,106,.48), 0 0 28px rgba(217,174,97,.22);
-    }
-
-    .sectionDivider span:before{
-      content:"";
-      position:absolute;
-      left:-12px;
-      right:-12px;
-      top:50%;
-      height:30px;
-      transform:translateY(-50%);
-      background:radial-gradient(ellipse at center, rgba(255,199,106,.16), transparent 68%);
-      z-index:-1;
-      pointer-events:none;
-    }
-
-    .sectionDivider:after{
-      animation:dividerGlowPulse 3.8s ease-in-out infinite;
-    }
-
-    .sectionDivider:before{
-      animation:dividerGlowPulse 3.8s ease-in-out infinite reverse;
-    }
-
-    .sectionDivider .dividerShimmer{
-      position:absolute;
-      inset:-10px 0;
-      pointer-events:none;
-      overflow:hidden;
-      z-index:1;
-    }
-
-    .sectionDivider .dividerShimmer:before{
-      content:"";
-      position:absolute;
-      top:50%;
-      left:-30%;
-      width:18%;
-      height:2px;
-      transform:translateY(-50%);
-      background:linear-gradient(90deg, transparent, rgba(255,255,255,.92), rgba(255,228,167,.9), transparent);
-      box-shadow:0 0 16px rgba(255,228,167,.55);
-      animation:dividerShimmerSweep 4.6s ease-in-out infinite;
-    }
-
-    @keyframes dividerShimmerSweep{
-      0%, 18%{left:-30%; opacity:0;}
-      34%{opacity:1;}
-      58%{left:112%; opacity:0;}
-      100%{left:112%; opacity:0;}
-    }
-
-    @keyframes dividerGlowPulse{
-      0%,100%{opacity:.78; filter:brightness(1);}
-      50%{opacity:1; filter:brightness(1.22);}
-    }
-
-    /* ===== CORE PROGRAM CARD — subtly more dominant than bonus cards ===== */
-    .coreOffer{
-      position:relative;
-      border-color:rgba(255,199,106,.55);
-      background:
-        radial-gradient(circle at 18% 8%, rgba(255,199,106,.16), transparent 28%),
-        linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.045));
-      box-shadow:0 30px 90px rgba(0,0,0,.34), 0 0 34px rgba(217,174,97,.12);
-      transform:translateY(-2px);
-    }
-
-    .coreOffer:before{
-      content:"";
-      position:absolute;
-      inset:0;
-      border-radius:var(--radius);
-      pointer-events:none;
-      background:linear-gradient(135deg, rgba(255,228,167,.28), transparent 32%, transparent 68%, rgba(126,231,255,.08));
-      opacity:.55;
-      mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-      -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-      padding:1px;
-      -webkit-mask-composite:xor;
-      mask-composite:exclude;
-    }
-
-    .coreOffer .bonusLabel{
-      color:var(--gold2);
-      text-shadow:0 0 14px rgba(255,199,106,.34);
-    }
-
-    .coreOffer h3{
-      font-size:clamp(26px, 3vw, 34px);
-      letter-spacing:-.02em;
-    }
-
-    @media(min-width:981px){
-      .coreOffer{
-        padding:28px;
-        max-width:820px;
-        margin:0 auto;
-      }
-
-      .coreOffer img{
-        max-height:340px;
-      }
-    }
-
-    @media(max-width:680px){
-      .sectionDivider{
-        width:calc(100% - 28px);
-        gap:12px;
-        margin:46px auto 20px;
-        font-size:12px;
-        letter-spacing:.18em;
-      }
-
-      .coreOffer{
-        padding:18px;
-      }
-    }
-
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATS Weekly KPI Report — May 4–10, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: linear-gradient(180deg, #f0e0cc 0%, #ebd4ba 40%, #f0dece 100%); min-height: 100vh; font-family: 'DM Sans', sans-serif; padding: 24px 16px 48px; }
+.container { max-width: 480px; margin: 0 auto; }
+.wordmark { font-family: 'DM Sans', sans-serif; font-size: 22px; font-weight: 500; letter-spacing: -0.02em; color: #1a1209; padding-left: 4px; margin-bottom: -4px; }
+.hero { position: relative; overflow: hidden; background: linear-gradient(145deg, #1a1209 0%, #0d0905 60%, #000000 100%); border-radius: 18px; padding: 28px 24px 24px; margin-bottom: 16px; }
+.hero::before { content: ''; position: absolute; top: -40px; right: -40px; width: 260px; height: 260px; background: radial-gradient(circle, rgba(232,96,26,0.55) 0%, rgba(200,60,10,0.20) 50%, transparent 70%); pointer-events: none; }
+.hero-title { font-family: 'Bebas Neue', sans-serif; font-size: 34px; letter-spacing: 0.05em; color: #ffffff; line-height: 1.05; }
+.hero-date { font-size: 15px; font-weight: 400; color: rgba(255,235,200,0.9); margin-top: 6px; }
+.card { background: #ffffff; border: 1px solid #e8d8c8; border-radius: 16px; box-shadow: 0 2px 16px rgba(140,70,10,0.10); padding: 20px; margin-bottom: 16px; }
+.card-title { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10em; color: #a0835e; margin-bottom: 16px; }
+.metric-row { display: flex; align-items: flex-start; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f5ede5; }
+.metric-row:last-child { border-bottom: none; }
+.metric-label { font-size: 15.5px; font-weight: 500; color: #3a2a1a; padding-top: 4px; }
+.metric-right { text-align: right; min-width: 140px; }
+.metric-value { font-family: 'Bebas Neue', sans-serif; font-size: 38px; line-height: 1; }
+.metric-value.over { color: #e8601a; }
+.metric-value.under { color: rgba(176,48,10,0.70); }
+.progress-bar-wrap { width: 140px; height: 5px; background: #f0e8df; border-radius: 3px; margin: 5px 0 4px auto; }
+.progress-bar-fill { height: 5px; border-radius: 3px; }
+.progress-bar-fill.over { background: linear-gradient(90deg, #f5c842, #e8601a); }
+.progress-bar-fill.under { background: #d4956a; }
+.metric-goal { font-size: 16px; color: #b09070; }
+.activity-grid { display: grid; grid-template-columns: 1fr 1fr; border-radius: 12px; overflow: hidden; border: 1px solid #f0e8df; }
+.activity-cell { background: #fdf8f4; padding: 14px 16px; text-align: center; }
+.activity-cell:nth-child(1) { border-right: 1px solid #f0e8df; border-bottom: 1px solid #f0e8df; }
+.activity-cell:nth-child(2) { border-bottom: 1px solid #f0e8df; }
+.activity-cell:nth-child(3) { border-right: 1px solid #f0e8df; }
+.activity-label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #a0835e; margin-bottom: 2px; }
+.activity-value { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: #1a1209; line-height: 1; }
+.activity-goal { font-size: 16px; color: #b09070; margin-top: 2px; }
+.lead-types-header { display: grid; grid-template-columns: 1fr 80px 80px; padding: 0 0 8px; border-bottom: 1px solid #f0e8df; margin-bottom: 4px; }
+.lt-col-header { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #a0835e; text-align: right; }
+.lt-col-header:first-child { text-align: left; }
+.lead-type-row { border-bottom: 1px solid #f5ede5; }
+.lead-type-row:last-of-type { border-bottom: none; }
+.lead-type-main { display: grid; grid-template-columns: 1fr 80px 80px; align-items: center; padding: 10px 0 6px; cursor: pointer; }
+.lt-name { font-size: 15px; font-weight: 500; color: #3a2a1a; }
+.lt-toggle { display: block; font-size: 11px; font-weight: 600; color: #e8601a; margin-top: 2px; user-select: none; }
+.lt-qty { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: #1a1209; text-align: right; }
+.lt-dpl { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: #1a1209; text-align: right; }
+.alloc-rows { display: none; background: #fdf8f4; border-top: 1px solid #f0e8df; padding: 4px 0 8px; }
+.alloc-rows.open { display: block; }
+.alloc-row { display: grid; grid-template-columns: 1fr 80px 80px; padding: 5px 0 5px 12px; border-bottom: 1px solid #f5ede5; }
+.alloc-row:last-child { border-bottom: none; }
+.alloc-label { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #a0835e; }
+.alloc-qty { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: #1a1209; text-align: right; }
+.alloc-dpl { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: #1a1209; text-align: right; }
+.lt-total-row { display: grid; grid-template-columns: 1fr 80px 80px; align-items: center; background: #fff3e0; border-radius: 8px; padding: 10px 12px; margin-top: 8px; }
+.lt-total-label { font-size: 15px; font-weight: 700; color: #b84a08; }
+.lt-total-value { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: #b84a08; text-align: right; }
+.lt-footnote { font-size: 11px; color: #a0835e; margin-top: 8px; line-height: 1.5; }
+.leaderboard-row { display: flex; align-items: center; gap: 14px; padding: 12px 0; border-bottom: 1px solid #f5ede5; }
+.leaderboard-row:last-child { border-bottom: none; }
+.rank { font-family: 'Bebas Neue', sans-serif; font-size: 30px; min-width: 32px; text-align: center; }
+.rank.gold { color: #c9921a; }
+.rank.silver { color: #8a8f9a; }
+.rank.bronze { color: #a0673a; }
+.rep-info { flex: 1; }
+.rep-name { font-size: 16px; font-weight: 600; color: #1a1209; }
+.rep-dpl { font-size: 13.5px; color: #a0835e; margin-top: 1px; }
+.rep-rev-wrap { text-align: right; }
+.rep-rev { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: #1a1209; line-height: 1; }
+.rep-per-week { font-size: 13px; color: #a0835e; }
+.footer { text-align: center; font-size: 11px; color: #b09070; letter-spacing: 0.03em; margin-top: 8px; }
+</style>
 </head>
 <body>
-  <header class="nav">
-    <div class="wrap navin">
-      <div class="brand"><img src="assets/aia-logo.png" alt="AI Advantage" class="logo"><span class="challengeText">Coaching Challenge</span></div>
-      <nav class="navlinks"><a href="#experience">Experience</a><a href="#bonuses">Bonuses</a><a href="#plans">Payment Plans</a><a class="btn ghost" href="#checkout">Enroll Now</a></nav>
+<div class="container">
+
+  <div class="wordmark">AI Advantage</div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-title">Amplify AI<br>Weekly KPI Report</div>
+    <div class="hero-date">Week of May 4–10, 2026</div>
+  </div>
+
+  <!-- Section 1: Sales Performance -->
+  <div class="card">
+    <div class="card-title">Sales Performance</div>
+
+    <div class="metric-row">
+      <div class="metric-label">Total Sales</div>
+      <div class="metric-right">
+        <div class="metric-value under">$254,000</div>
+        <div class="progress-bar-wrap"><div class="progress-bar-fill under" style="width:79%"></div></div>
+        <div class="metric-goal">Goal $319,700</div>
+      </div>
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="wrap">
-        <div class="heroBannerWrap">
-          <img src="assets/tony-igor-dean.png" alt="Private Invitation Banner" class="heroAuthorityBanner">
-        </div>
+    <div class="metric-row">
+      <div class="metric-label">Core Sales</div>
+      <div class="metric-right">
+        <div class="metric-value under">$230,000</div>
+        <div class="progress-bar-wrap"><div class="progress-bar-fill under" style="width:78%"></div></div>
+        <div class="metric-goal">Goal $294,000</div>
       </div>
-      <div class="wrap heroGrid">
+    </div>
+
+    <div class="metric-row">
+      <div class="metric-label">Alumni Sales</div>
+      <div class="metric-right">
+        <div class="metric-value under">$24,000</div>
+        <div class="progress-bar-wrap"><div class="progress-bar-fill under" style="width:93%"></div></div>
+        <div class="metric-goal">Goal $25,700</div>
+      </div>
+    </div>
+
+    <div class="metric-row">
+      <div class="metric-label">DPL 6-Wk Avg</div>
+      <div class="metric-right">
+        <div class="metric-value under">$335</div>
+        <div class="progress-bar-wrap"><div class="progress-bar-fill under" style="width:84%"></div></div>
+        <div class="metric-goal">Goal $400</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Floor Activity -->
+  <div class="card">
+    <div class="card-title">Floor Activity</div>
+    <div class="activity-grid">
+      <div class="activity-cell">
+        <div class="activity-label">Leads Allocated</div>
+        <div class="activity-value">857</div>
+        <div class="activity-goal">Goal 735</div>
+      </div>
+      <div class="activity-cell">
+        <div class="activity-label">Leads / Rep</div>
+        <div class="activity-value">32</div>
+        <div class="activity-goal">Goal 35</div>
+      </div>
+      <div class="activity-cell">
+        <div class="activity-label">Active Reps</div>
+        <div class="activity-value">27</div>
+        <div class="activity-goal">Goal 21</div>
+      </div>
+      <div class="activity-cell">
+        <div class="activity-label">Conv Rate</div>
+        <div class="activity-value">1.4%</div>
+        <div class="activity-goal">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: Lead Types -->
+  <div class="card">
+    <div class="card-title">Lead Types</div>
+    <div class="lead-types-header">
+      <div class="lt-col-header"></div>
+      <div class="lt-col-header">QTY</div>
+      <div class="lt-col-header">DPL 6WK</div>
+    </div>
+
+    <!-- Bootcamp Buyers -->
+    <div class="lead-type-row">
+      <div class="lead-type-main" onclick="toggleAlloc('bootcamp')">
         <div>
-          <h1>
-            <span class="line1">The AI Advantage</span>
-            <span class="line2">Coaching Challenge</span>
-          </h1>
-          <p class="lead">Tony Robbins, Dean Graziosi and Igor Pogany have created a premium 1 on 1 coaching experience designed to help you get out in front of the AI revolution. Build and implement your AI Clone thought partner, sharpen your strategy, and turn AI into a practical advantage in your business, productivity, and life.</p>
-          <div class="heroList">
-            <div class="pill">✓ Private AI Advantage Coach</div>
-            <div class="pill">✓ Clone implementation support</div>
-            <div class="pill">✓ Premium bonuses included</div>
-            <div class="pill">✓ Secure enrollment</div>
-          </div>
-          <a class="btn" href="#checkout">Reserve My Coaching Seat</a>
+          <div class="lt-name">Bootcamp Buyers</div>
+          <span class="lt-toggle" id="toggle-bootcamp">▶ Allocation Types</span>
+        </div>
+        <div class="lt-qty">757</div>
+        <div class="lt-dpl">$338</div>
+      </div>
+      <div class="alloc-rows" id="alloc-bootcamp">
+        <div class="alloc-row">
+          <div class="alloc-label">SS</div>
+          <div class="alloc-qty">92</div>
+          <div class="alloc-dpl">$726</div>
+        </div>
+        <div class="alloc-row">
+          <div class="alloc-label">DP</div>
+          <div class="alloc-qty">655</div>
+          <div class="alloc-dpl">$218</div>
+        </div>
+        <div class="alloc-row">
+          <div class="alloc-label">DP Special</div>
+          <div class="alloc-qty">0</div>
+          <div class="alloc-dpl">$406</div>
+        </div>
+        <div class="alloc-row">
+          <div class="alloc-label">LMA</div>
+          <div class="alloc-qty">9</div>
+          <div class="alloc-dpl">—</div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="experience" class="section">
-      <div class="wrap">
-        
-        <div class="offerGrid">
-          <article class="offer coreOffer"><div class="bonusLabel">CORE PROGRAM</div><img src="assets/one-on-one-coaching.png" alt="One on one AI coaching"><div><h3>12 One-on-One AI Advantage Coaching Sessions</h3><p>Work privately with an AI Advantage Certified Coach to implement your AI Clone, refine your workflows, and build systems you can actually use.</p><ul class="checks"><li>Personalized coaching and accountability</li><li>Clone integration and prompt refinement</li><li>Implementation-focused sessions</li></ul></div></article>
-          
+    <!-- Black Card Buyers -->
+    <div class="lead-type-row">
+      <div class="lead-type-main" onclick="toggleAlloc('blackcard')">
+        <div>
+          <div class="lt-name">Black Card Buyers</div>
+          <span class="lt-toggle" id="toggle-blackcard">▶ Allocation Types</span>
+        </div>
+        <div class="lt-qty">141</div>
+        <div class="lt-dpl">$805</div>
+      </div>
+      <div class="alloc-rows" id="alloc-blackcard">
+        <div class="alloc-row">
+          <div class="alloc-label">SS</div>
+          <div class="alloc-qty">25</div>
+          <div class="alloc-dpl">$1,549</div>
+        </div>
+        <div class="alloc-row">
+          <div class="alloc-label">DP</div>
+          <div class="alloc-qty">104</div>
+          <div class="alloc-dpl">$586</div>
+        </div>
+        <div class="alloc-row">
+          <div class="alloc-label">DP Special</div>
+          <div class="alloc-qty">10</div>
+          <div class="alloc-dpl">$264</div>
+        </div>
+        <div class="alloc-row">
+          <div class="alloc-label">LMA</div>
+          <div class="alloc-qty">2</div>
+          <div class="alloc-dpl">—</div>
         </div>
       </div>
-    </section>
-<div class="sectionDivider">
-  <span class="dividerShimmer" aria-hidden="true"></span>
-  <span>BONUSES</span>
+    </div>
+
+    <!-- AIA Club Members -->
+    <div class="lead-type-row">
+      <div class="lead-type-main" onclick="toggleAlloc('aiaclub')">
+        <div>
+          <div class="lt-name">AIA Club Members ($333)</div>
+          <span class="lt-toggle" id="toggle-aiaclub">▶ Allocation Types</span>
+        </div>
+        <div class="lt-qty">—</div>
+        <div class="lt-dpl">—</div>
+      </div>
+      <div class="alloc-rows" id="alloc-aiaclub">
+        <div class="alloc-row">
+          <div class="alloc-label">SS</div>
+          <div class="alloc-qty">—</div>
+          <div class="alloc-dpl">—</div>
+        </div>
+        <div class="alloc-row">
+          <div class="alloc-label">DP</div>
+          <div class="alloc-qty">—</div>
+          <div class="alloc-dpl">—</div>
+        </div>
+        <div class="alloc-row">
+          <div class="alloc-label">DP Special</div>
+          <div class="alloc-qty">—</div>
+          <div class="alloc-dpl">—</div>
+        </div>
+        <div class="alloc-row">
+          <div class="alloc-label">LMA</div>
+          <div class="alloc-qty">—</div>
+          <div class="alloc-dpl">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lt-total-row">
+      <div class="lt-total-label">Total Allocated *</div>
+      <div class="lt-total-value">857</div>
+      <div></div>
+    </div>
+    <div class="lt-footnote">* Individual lead type counts may include duplicates across categories. AIA Club data unavailable this week — product filter returned no results; verify in CRM.</div>
+  </div>
+
+  <!-- Section 4: Top Performers — This Week -->
+  <div class="card">
+    <div class="card-title">Top Performers — This Week</div>
+
+    <div class="leaderboard-row">
+      <div class="rank gold">1</div>
+      <div class="rep-info">
+        <div class="rep-name">Mitchell McLellan</div>
+        <div class="rep-dpl">DPL $685</div>
+      </div>
+      <div class="rep-rev-wrap">
+        <div class="rep-rev">$52,000</div>
+      </div>
+    </div>
+
+    <div class="leaderboard-row">
+      <div class="rank silver">2</div>
+      <div class="rep-info">
+        <div class="rep-name">Adam Dresher</div>
+        <div class="rep-dpl">DPL $1,333</div>
+      </div>
+      <div class="rep-rev-wrap">
+        <div class="rep-rev">$30,000</div>
+      </div>
+    </div>
+
+    <div class="leaderboard-row">
+      <div class="rank bronze">3</div>
+      <div class="rep-info">
+        <div class="rep-name">Grant Phillips</div>
+        <div class="rep-dpl">DPL $1,263</div>
+      </div>
+      <div class="rep-rev-wrap">
+        <div class="rep-rev">$24,000</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 5: Top Performers — 6-Week Average -->
+  <div class="card">
+    <div class="card-title">Top Performers — 6-Week Average</div>
+
+    <div class="leaderboard-row">
+      <div class="rank gold">1</div>
+      <div class="rep-info">
+        <div class="rep-name">James Payne</div>
+        <div class="rep-dpl">DPL $1,130</div>
+      </div>
+      <div class="rep-rev-wrap">
+        <div class="rep-rev">$17,333</div>
+        <div class="rep-per-week">per week</div>
+      </div>
+    </div>
+
+    <div class="leaderboard-row">
+      <div class="rank silver">2</div>
+      <div class="rep-info">
+        <div class="rep-name">Craig Conover</div>
+        <div class="rep-dpl">DPL $511</div>
+      </div>
+      <div class="rep-rev-wrap">
+        <div class="rep-rev">$15,667</div>
+        <div class="rep-per-week">per week</div>
+      </div>
+    </div>
+
+    <div class="leaderboard-row">
+      <div class="rank bronze">3</div>
+      <div class="rep-info">
+        <div class="rep-name">Luke Burtt</div>
+        <div class="rep-dpl">DPL $1,000</div>
+      </div>
+      <div class="rep-rev-wrap">
+        <div class="rep-rev">$14,667</div>
+        <div class="rep-per-week">per week</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Generated by Claude · AI Advantage Coaching CRM · Week of May 4–10, 2026</div>
+
 </div>
-    <section id="bonuses" class="section">
-      <div class="wrap">
-        <div class="sectionHead"><h2>Your Complete Coaching Support System</h2><p>Additional experiences and tools designed to deepen your implementation and extend your momentum beyond the private sessions.</p></div>
-        <div class="offerGrid">
-          <article class="offer">
-            <div class="bonusLabel">BONUS 1</div>
-            <img src="assets/ai-bootcamp.png" alt="AI Advantage Bootcamp">
-            <div>
-              <h3>AI Advantage Bootcamp — Full Session Recordings</h3>
-              <p>
-                Get complete access to the AI Advantage Bootcamp experience through full session recordings. This is the step-by-step system used to build, train, and implement your AI Clone — now available to you on-demand.
-              </p>
-              <ul class="checks">
-                <li><strong>Clone Builder:</strong> Build your AI Clone in one focused session</li>
-                <li><strong>Activate:</strong> Start getting real time back immediately</li>
-                <li><strong>Accelerate:</strong> Train your Clone in your voice and thinking</li>
-                <li><strong>Augment:</strong> Work alongside AI daily with real workflows</li>
-                <li><strong>Automate:</strong> Build systems that run without you</li>
-                <li><strong>Scale:</strong> Make AI your new operating standard</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="offer">
-            <div class="bonusLabel">BONUS 2</div>
-            <img src="assets/igor-ai.png" alt="Ask Igor AI Clone">
-            <div>
-              <h3>Ask Igor AI Clone — 6 Months</h3>
-              <p>Access Igor AI as a strategic thought partner when you need clarity, ideas, or a new angle on how to apply AI to your business and life.</p>
-              <ul class="checks">
-                <li>Six months of access</li>
-                <li>Strategic AI guidance</li>
-                <li>Faster ideation and clarity</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="offer">
-            <div class="bonusLabel">BONUS 3</div>
-            <img src="assets/leverage-playbook.png" alt="Tony Robbins Leverage Playbook">
-            <div>
-              <h3>Tony Robbins' Leverage Playbook</h3>
-              <p><strong>25 tasks your agent can handle this month.</strong></p>
-              <p>Tony Robbins has spent nearly 50 years mastering the art of delegation and knowing exactly what to hand off so you can focus on what matters. Now he's applied that same framework to AI.</p>
-              <p>You get 25 ready-to-use tasks across business, marketing, operations, and personal life. No more wondering what to hand off. Just pick from Tony’s playbook and let your agent go to work.</p>
-              <ul class="checks">
-                <li>25 ready-to-use AI delegation tasks</li>
-                <li>Business, marketing, operations, and personal life applications</li>
-                <li>A practical playbook for turning your agent into leverage</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="offer">
-            <div class="bonusLabel">BONUS 4</div>
-            <img src="assets/arthur-brooks.png" alt="Arthur Brooks Better Life Protocols">
-            <div>
-              <h3>Arthur Brooks Better Life Protocols</h3>
-              <p><strong>15 daily protocols from Harvard’s happiness expert to feel more positive and less negative — starting tomorrow.</strong></p>
-              <p>Arthur saw what was happening in this group and wanted to add his own bonus — 15 daily protocols pulled from decades of Harvard happiness research, designed to help you feel more positive and less negative starting tomorrow.</p>
-              <p>You’ll get both companion guides: six protocols to start your morning right and nine to wind down your evening. Just follow Arthur’s playbook and build a better life.</p>
-              <ul class="checks">
-                <li>Six morning protocols to build a better life</li>
-                <li>Nine evening protocols to wind down with intention</li>
-                <li>Simple daily practices designed for immediate momentum</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="offer">
-            <div class="bonusLabel">BONUS 5</div>
-            <img src="assets/group-coaching.png" alt="Small group implementation classes">
-            <div>
-              <h3>12 Small Group Implementation Classes</h3>
-              <p>Join a select group of early adopters refining their AI Clones, sharing momentum, and staying accountable to real implementation.</p>
-              <ul class="checks">
-                <li>Guided implementation support</li>
-                <li>Community accountability</li>
-                <li>Continued refinement</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="offer">
-            <div class="bonusLabel">BONUS 6</div>
-            <img src="assets/ai-mastery-event.png" alt="AI Mastery live event">
-            <div>
-              <h3>Two Tickets to a 3-Day AI Mastery Event</h3>
-              <p>Attend an immersive live experience designed to deepen your skills, expand your network, and accelerate the identity shift of becoming an AI-powered leader.</p>
-              <ul class="checks">
-                <li>Two event tickets included</li>
-                <li>Live expert training</li>
-                <li>High-proximity momentum</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="offer">
-            <div class="bonusLabel">BONUS 7</div>
-            <img src="assets/ultimate-you.png" alt="Ultimate You AI summary">
-            <div>
-              <h3>Ultimate You — Personalized Clone DNA</h3>
-              <p>Your coaching conversations reveal patterns in your goals, beliefs, language, and vision. Ultimate You turns those insights into a dynamic profile that helps your Clone understand you at a deeper level.</p>
-              <ul class="checks">
-                <li>AI-analyzed coaching insights</li>
-                <li>Personalized growth patterns</li>
-                <li>Better Clone context over time</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="offer">
-            <div class="bonusLabel">BONUS 8</div>
-            <img src="assets/coaching-certificate.png" alt="AI Advantage certificate">
-            <div>
-              <h3>AI Advantage Certificate of Completion</h3>
-              <p>Earn an official certificate recognizing your completion of the coaching journey and your demonstrated proficiency with AI Clone usage, prompting, and implementation.</p>
-              <ul class="checks">
-                <li>Completion recognition</li>
-                <li>AI adoption milestone</li>
-                <li>Proof you built the skill</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="plans" class="section">
-      <div class="wrap enroll" id="checkout">
-        <div class="panel">
-          <div class="sectionHead" style="margin-bottom:0"><h2>Select Your Plan</h2><p>Choose the enrollment option that works best for you. First payment is due today.</p></div>
-          <div class="plans" role="radiogroup" aria-label="Payment plans">
-            <div class="plan active" data-plan="1 Payment" data-price="$6,000">
-              <span class="save">Save 10%</span>
-              <small>1 Payment</small>
-              <div class="price">$6,000</div>
-              <p>Best value. Pay today and lock in your AI Advantage Coaching seat.</p>
-            </div>
-            <div class="plan" data-plan="3 Payments" data-price="$2,200">
-              <small>3 Payments</small>
-              <div class="price">$2,200 <span style="font-size:17px;font-weight:700">/ Month</span></div>
-              <p>First payment due today. Remaining payments are scheduled monthly.</p>
-            </div>
-          </div>
-
-          <div class="divider"></div>
-          <h3>Billing Details</h3>
-          <form id="orderForm">
-            <div class="formGrid">
-              <div class="field"><label for="first">First name *</label><input id="first" name="first" autocomplete="given-name" required></div>
-              <div class="field"><label for="last">Last name *</label><input id="last" name="last" autocomplete="family-name" required></div>
-              <div class="field full"><label for="address">Street address *</label><input id="address" name="address" autocomplete="street-address" required></div>
-              <div class="field"><label for="city">Town / City *</label><input id="city" name="city" autocomplete="address-level2" required></div>
-              <div class="field"><label for="state">State / Province *</label><input id="state" name="state" autocomplete="address-level1" required></div>
-              <div class="field"><label for="zip">ZIP Code *</label><input id="zip" name="zip" autocomplete="postal-code" required></div>
-              <div class="field"><label for="country">Country *</label><select id="country" name="country"><option>United States</option><option>Canada</option><option>United Kingdom</option><option>Australia</option><option>New Zealand</option><option>Other</option></select></div>
-              <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
-              <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-              <div class="field full"><label for="card">Credit Card Number *</label><input id="card" name="card" inputmode="numeric" placeholder="•••• •••• •••• ••••" required></div>
-              <div class="field"><label for="exp">Expiration Date *</label><input id="exp" name="exp" placeholder="MM / YY" required></div>
-              <div class="field"><label for="cvv">CVV *</label><input id="cvv" name="cvv" inputmode="numeric" placeholder="•••" required></div>
-            </div>
-
-            <div class="divider"></div>
-            <h3>Terms & Conditions</h3>
-            <div class="terms">
-              <details open><summary>Section 1: I Am Committed and Able to Afford Coaching</summary><div class="copy">You understand the financial commitment you are making today, agree to participate fully, attend sessions, communicate scheduling needs in advance, and keep billing information current.</div></details>
-              <details><summary>Section 2: I Understand the Disclaimers and Waivers</summary><div class="copy">The Program is for educational, informational, and personal development purposes. No guarantee of business, financial, medical, health, or specific results is made. You remain responsible for reviewing and verifying all AI-generated output before relying on it.</div></details>
-              <details><summary>Section 3: I Will Keep Content Confidential</summary><div class="copy">Program content, curriculum, coaching processes, membership areas, live events, and related materials are proprietary and may not be shared, sold, duplicated, or used to create derivative works without written permission.</div></details>
-              <details><summary>Section 4: I Can Cancel Enrollment</summary><div class="copy">You may cancel according to the stated cancellation policy. Disputes are governed by the program agreement and applicable Arizona law.</div></details>
-              <details><summary>Section 5: I Understand the Bonuses & Inclusions</summary><div class="copy">Bonuses are complimentary inclusions and do not carry separate financial value toward the program payments. Access timing may vary by program level and curriculum progress.</div></details>
-            </div>
-            <label class="agree"><input type="checkbox" required> <span>Yes, I have read and agree to the Terms and Conditions and understand that this order form serves as my legal digital signature.</span></label>
-            <button class="btn" type="submit" style="width:100%;margin-top:10px">Place Order</button>
-          </form>
-        </div>
-
-        <aside class="panel summary" aria-label="Order summary">
-          <h3>Order Summary</h3>
-          <p style="color:var(--muted);margin-top:0">AI Advantage 1 on 1 Coaching Program</p>
-          <div class="lineItem"><span>1-on-1 Coaching Sessions</span><span>Included</span></div>
-          <div class="lineItem"><span>AI Advantage Bootcamp</span><span>Bonus</span></div>
-          <div class="lineItem"><span>Igor AI Access</span><span>Bonus</span></div>
-          <div class="lineItem"><span>Tony Robbins Leverage Playbook</span><span>Bonus</span></div>
-          <div class="lineItem"><span>Arthur Brooks Better Life Protocols</span><span>Bonus</span></div>
-          <div class="lineItem"><span>12 Group Classes</span><span>Bonus</span></div>
-          <div class="lineItem"><span>2 Live Event Tickets</span><span>Bonus</span></div>
-          <div class="lineItem"><span>Ultimate You AI Clone DNA</span><span>Bonus</span></div>
-          <div class="lineItem"><span>AI Advantage Certificate</span><span>Included</span></div>
-          <div class="due"><small>Due Now</small><strong id="dueNow">$6,000</strong><div id="planNote">1 Payment selected</div></div>
-          <a class="btn" href="#checkout" style="width:100%">Complete Secure Enrollment</a>
-          <div class="secure"><span class="badge">SSL Secure</span><span class="badge">Authorize.Net Ready</span><span class="badge">Cards Accepted</span></div>
-          <p style="color:var(--muted);font-size:13px;margin-top:18px">Your payment information is securely submitted through the checkout processor.</p>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <div class="mobileCta"><a class="btn" href="#checkout">Enroll Now</a></div>
-  <footer class="footer"><div class="wrap">Copyright © AmplifyAI. All Rights Reserved.</div></footer>
-
-  <script>
-    const plans = document.querySelectorAll('.plan');
-    const dueNow = document.getElementById('dueNow');
-    const planNote = document.getElementById('planNote');
-    plans.forEach(plan => plan.addEventListener('click', () => {
-      plans.forEach(p => p.classList.remove('active'));
-      plan.classList.add('active');
-      dueNow.textContent = plan.dataset.price || '@PRICE@';
-      planNote.textContent = plan.dataset.plan + ' selected';
-    }));
-    document.getElementById('orderForm').addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Please connect this form to the AmplifyAI checkout processor before accepting payments.');
-    });
-  </script>
+<script>
+function toggleAlloc(id) {
+  const rows = document.getElementById('alloc-' + id);
+  const toggle = document.getElementById('toggle-' + id);
+  const isOpen = rows.classList.contains('open');
+  rows.classList.toggle('open', !isOpen);
+  toggle.textContent = isOpen ? '▶ Allocation Types' : '▼ Allocation Types';
+}
+</script>
 </body>
 </html>
